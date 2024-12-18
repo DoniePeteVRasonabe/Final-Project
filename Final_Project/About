@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>About me</title>
+	<link rel="stylesheet" href="styles3.css">
+  </head>
+  <body>
+    <section class="about">
+	  <div class="main">
+	    <img src="Images/Image7.png" alt="">
+		<div class="about-text">
+		  <h1>About Me</h1>
+		  <h5>High School Student<span> & an Aspiring Developer</span></h5>
+		  <p>SY 2024 to 2025, by this time im still at 
+		  Grade 9 of Barium. Glad to be able to reach
+		  out for any concerns from my Project. For further
+		  questions, please contact me at doniepete.rasonabe@smc.pshs.edu.ph</p>
+		  <button type="button">Related News</button>
+		  <button type="button" class="cv">References</button>
+		</div>
+	  </div>
+	</section>
+	<div class="sprite"></div>
+  </body>
+</html>
