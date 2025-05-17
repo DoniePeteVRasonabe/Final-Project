@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { max-width: 400px; margin: auto; padding: 20px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body onload="loadData()">
+    <div class="container">
+        <h2>Profile</h2>
+        <p id="profileInfo">No username, no email, no password</p>
+        <button id="logoutButton" onclick="logout()">Log Out</button>
+        <button class="button" onclick="location.href='Project1.html'">Project 1</button>
+        <button class="button" onclick="location.href='Page-2.html'">Page 2</button>
+    </div>
+    <script>
+        function loadData() {
+            const username = localStorage.getItem('username');
+            const email = localStorage.getItem('email');
+            const password = localStorage.getItem('password');
+
+            if (username && email && password) {
+                document.getElementById('profileInfo').innerText = `Username: ${username}, Email: ${email}, Password: ${password}`;
+                document.getElementById('logoutButton').innerText = 'Log Out';
+            }
+        }
+
+        function logout() {
+            localStorage.removeItem('username');
+            localStorage.removeItem('email');
+            localStorage.removeItem('password');
+            window.location.href = 'login.html';
+        }
+    </script>
+</body>
+</html>
